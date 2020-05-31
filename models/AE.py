@@ -8,6 +8,7 @@ from keras.utils import plot_model
 
 from utils.callbacks import CustomCallback, step_decay_schedule
 
+
 import numpy as np
 import json
 import os
@@ -153,8 +154,7 @@ class Autoencoder():
                 ], f)
 
         self.plot_model(folder)
-
-        
+  
 
 
     def load_weights(self, filepath):
